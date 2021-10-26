@@ -14,6 +14,11 @@ body {
   color: #555555;
 }
 
+address{
+  display: flex;
+  font-style: normal;
+}
+
 .bold {
   font-weight: 700;
   font-size: 20px;
@@ -25,68 +30,68 @@ body {
   font-size: 16px;
 }
 
-.resume {
+.resumo {
   height: auto;
   display: flex;
 }
 
-.resume .resume_left {
+.resumo .resumo_esquerda {
   background: #0bb5f4;
 }
 
-.resume_profile{
+.resumo_profile{
   text-align: center;
 }
 
-.resume .resume_left .resume_profile {
+.resumo .resumo_esquerda .resumo_profile {
   width: 100%;
   height: 280px;
 }
 
-.resume .resume_left .resume_profile img {
+.resumo .resumo_esquerda .resumo_profile img {
   width: 50%;
   height: 65%;
   border-radius: 100%;
   margin-top: 10%;
 }
 
-.resume .resume_left .resume_content {
+.resumo .resumo_esquerda .resumo_content {
   padding: 0 25px;
 }
 
-.resume .title {
+.resumo .title {
   margin-bottom: 20px;
 }
 
-.resume .resume_left .bold {
+.resumo .resumo_esquerda .bold {
   color: #fff;
 }
 
-.resume .resume_left .regular {
+.resumo .resumo_esquerda .regular {
   color: #b1eaff;
 }
 
-.resume .resume_item {
+.resumo .resumo_item {
   padding: 25px 0;
   border-bottom: 2px solid #b1eaff;
 }
 
-.resume .resume_left .resume_item:last-child,
-.resume .resume_right .resume_item:last-child {
+.resumo .resumo_esquerda .resumo_item:last-child,
+.resumo .resumo_direita .resumo_item:last-child {
   border-bottom: 0px;
 }
 
-.resume .resume_left ul li {
+.resumo .resumo_esquerda ul li {
   display: flex;
   margin-bottom: 10px;
   align-items: center;
 }
 
-.resume .resume_left ul li:last-child {
+.resumo .resumo_esquerda ul li:last-child {
   margin-bottom: 0;
 }
 
-.resume .resume_left ul li .icon {
+.resumo .resumo_esquerda ul li .icon {
   width: 35px;
   height: 35px;
   background: #fff;
@@ -97,19 +102,19 @@ body {
   position: relative;
 }
 
-.resume .icon i,
-.resume .resume_right .resume_hobby ul li i {
+.resumo .icon i,
+.resumo .resumo_direita .resumo_hobby ul li i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.resume .resume_left ul li .data {
+.resumo .resumo_esquerda ul li .data {
   color: #b1eaff;
 }
 
-.resume .resume_left .resume_skills ul li {
+.resumo .resumo_esquerda .resumo_skills ul li {
   display: flex;
   margin-bottom: 10px;
   color: #b1eaff;
@@ -117,11 +122,11 @@ body {
   align-items: center;
 }
 
-.resume .resume_left .resume_skills ul li .skill_name {
+.resumo .resumo_esquerda .resumo_skills ul li .skill_name {
   width: 25%;
 }
 
-.resume .resume_left .resume_skills ul li .skill_progress {
+.resumo .resumo_esquerda .resumo_skills ul li .skill_progress {
   width: 60%;
   margin: 0 5px;
   height: 5px;
@@ -129,11 +134,11 @@ body {
   position: relative;
 }
 
-.resume .resume_left .resume_skills ul li .skill_per {
+.resumo .resumo_esquerda .resumo_skills ul li .skill_per {
   width: 15%;
 }
 
-.resume .resume_left .resume_skills ul li .skill_progress span {
+.resumo .resumo_esquerda .resumo_skills ul li .skill_progress span {
   position: absolute;
   top: 0;
   left: 0;
@@ -141,47 +146,47 @@ body {
   background: #fff;
 }
 
-.resume .resume_left .resume_social .semi-bold {
+.resumo .resumo_esquerda .resumo_social .semi-bold {
   color: #fff;
   margin-bottom: 3px;
 }
 
-.resume .resume_right {
+.resumo .resumo_direita {
   width: 520px;
   background: #fff;
   padding: 25px;
 }
 
-.resume .resume_right .bold {
+.resumo .resumo_direita .bold {
   color: #0bb5f4;
 }
 
-.resume .resume_right .resume_work ul,
-.resume .resume_right .resume_education ul {
+.resumo .resumo_direita .resumo_work ul,
+.resumo .resumo_direita .resumo_education ul {
   padding-left: 40px;
   overflow: hidden;
 }
 
-.resume .resume_right ul li {
+.resumo .resumo_direita ul li {
   position: relative;
 }
 
-.resume .resume_right ul li .date {
+.resumo .resumo_direita ul li .date {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 15px;
 }
 
-.resume .resume_right ul li .info {
+.resumo .resumo_direita ul li .info {
   margin-bottom: 20px;
 }
 
-.resume .resume_right ul li:last-child .info {
+.resumo .resumo_direita ul li:last-child .info {
   margin-bottom: 0;
 }
 
-.resume .resume_right .resume_work ul li:before,
-.resume .resume_right .resume_education ul li:before {
+.resumo .resumo_direita .resumo_work ul li:before,
+.resumo .resumo_direita .resumo_education ul li:before {
   content: "";
   position: absolute;
   top: 5px;
@@ -192,8 +197,8 @@ body {
   border: 2px solid #0bb5f4;
 }
 
-.resume .resume_right .resume_work ul li:after,
-.resume .resume_right .resume_education ul li:after {
+.resumo .resumo_direita .resumo_work ul li:after,
+.resumo .resumo_direita .resumo_education ul li:after {
   content: "";
   position: absolute;
   top: 14px;
@@ -203,12 +208,12 @@ body {
   background: #0bb5f4;
 }
 
-.resume .resume_right .resume_hobby ul {
+.resumo .resumo_direita .resumo_hobby ul {
   display: flex;
   justify-content: space-between;
 }
 
-.resume .resume_right .resume_hobby ul li {
+.resumo .resumo_direita .resumo_hobby ul li {
   width: 80px;
   height: 80px;
   border: 2px solid #0bb5f4;
@@ -217,11 +222,11 @@ body {
   color: #0bb5f4;
 }
 
-.resume .resume_right .resume_hobby ul li i {
+.resumo .resumo_direita .resumo_hobby ul li i {
   font-size: 30px;
 }
 
-.resume .resume_right .resume_hobby ul li:before {
+.resumo .resumo_direita .resumo_hobby ul li:before {
   content: "";
   position: absolute;
   top: 40px;
@@ -231,6 +236,37 @@ body {
   background: #0bb5f4;
 }
 
-.resume .resume_right .resume_hobby ul li:last-child:before {
+.resumo .resumo_direita .resumo_hobby ul li:last-child:before {
   display: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu{
+  background-color: rgb(37, 37, 39);
+}
+
+.menu ul {
+  max-width: 800px;
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+}
+
+.menu ul li a {
+  color: #FFF;
+  padding: 20px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background .4s;
+}
+
+.menu ul li a:hover {
+  background-color: rgb(24, 139, 233);
 }
