@@ -36,7 +36,7 @@ address{
 }
 
 .resumo .resumo_esquerda {
-  background: #0bb5f4;
+  box-shadow: inset 0 10px 40px rgb(0 0 0 / 0.2);
 }
 
 .resumo_profile{
@@ -64,16 +64,16 @@ address{
 }
 
 .resumo .resumo_esquerda .bold {
-  color: #fff;
+  color: #0bb5f4;
 }
 
 .resumo .resumo_esquerda .regular {
-  color: #b1eaff;
+  color: #0bb5f4;
 }
 
 .resumo .resumo_item {
   padding: 25px 0;
-  border-bottom: 2px solid #b1eaff;
+  border-bottom: 2px solid #0bb5f4;
 }
 
 .resumo .resumo_esquerda .resumo_item:last-child,
@@ -111,43 +111,43 @@ address{
 }
 
 .resumo .resumo_esquerda ul li .data {
-  color: #b1eaff;
+  color: #0bb5f4;
 }
 
-.resumo .resumo_esquerda .resumo_skills ul li {
+.resumo .resumo_direita .resumo_habilidades ul li {
   display: flex;
   margin-bottom: 10px;
-  color: #b1eaff;
+  color: #0bb5f4;
   justify-content: space-between;
   align-items: center;
 }
 
-.resumo .resumo_esquerda .resumo_skills ul li .skill_name {
+.resumo .resumo_direita .resumo_habilidades ul li .habilidade_nome {
   width: 25%;
 }
 
-.resumo .resumo_esquerda .resumo_skills ul li .skill_progress {
+.resumo .resumo_direita .resumo_habilidades ul li .habilidade_progresso {
   width: 60%;
   margin: 0 5px;
   height: 5px;
-  background: #009fd9;
+  background: #b1eaff;
   position: relative;
 }
 
-.resumo .resumo_esquerda .resumo_skills ul li .skill_per {
+.resumo .resumo_direita .resumo_habilidades ul li .habilidade_para {
   width: 15%;
 }
 
-.resumo .resumo_esquerda .resumo_skills ul li .skill_progress span {
+.resumo .resumo_direita .resumo_habilidades ul li .habilidade_progresso span {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
-  background: #fff;
+  background: #0bb5f4;
 }
 
 .resumo .resumo_esquerda .resumo_social .semi-bold {
-  color: #fff;
+  color: #0bb5f4;
   margin-bottom: 3px;
 }
 
@@ -270,3 +270,12 @@ a:link {
 .menu ul li a:hover {
   background-color: rgb(24, 139, 233);
 }
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;    
+  text-align: center;
+  line-height: 100px;
+}
+
